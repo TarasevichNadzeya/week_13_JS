@@ -1,0 +1,25 @@
+* {
+    background-color: black;
+    color: rgba(255, 255, 255, 0.801);
+}
+
+.data_collector {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+
+input,
+textarea {
+    outline-style: dashed;
+    outline-color: rgb(81, 81, 173);
+}
+
+h2 {
+    color: rgb(81, 81, 173);
+}
+
+.button {
+    margin-top: 15px;
+    background-color: rgb(81, 81, 173);
+    outline-style: none;
+}

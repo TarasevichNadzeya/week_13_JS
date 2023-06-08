@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сервис комментариев</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1>Сервис комментариев со спам фильтром</h1>
+    <div class="data_collector">
+        <div class="left" id="form">
+            <h2>Оставьте ваш комментарий</h2>
+            <div class="author">
+                <span>Показывать ваше имя?</span>
+                <label for="yes">Да<input type="radio" name="author" value="yes" id="yes" /></label>
+                <label for="no">Нет<input type="radio" name="author" value="no" id="no" /></label>
+            </div>
+            <div class="name">
+                <p>Введите ваше <strong>Имя</strong>:</p>
+                <input type="text" id="name" size="50">
+            </div>
+            <div class="avatar">
+                <p>Введите ссылку <strong>вашего аватара</strong>:</p>
+                <input tupe="text" id="avatar" size="50">
+            </div>
+            <div class="comment">
+                <p>Оставьте комментарий:</p>
+                <textarea name="comment" id="comment" cols="50" rows="15"></textarea>
+            </div>
+            <button type="button" id="send" class="batton">Отправить</button>
+        </div>
+        <section class="chat">
+            <h2>Чат</h2>
+            <div class="messages" id="show"></div>
+        </section>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
